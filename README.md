@@ -1,244 +1,71 @@
-# Clean Blog Hexo
+# [Start Bootstrap - Clean Blog](https://startbootstrap.com/template-overviews/clean-blog/)
 
-![](http://www.codeblocq.com/img/hexo-theme-thumbnail/CleanBlog.png)
+[Clean Blog](http://startbootstrap.com/template-overviews/clean-blog/) is a stylish, responsive blog theme for [Bootstrap](http://getbootstrap.com/) created by [Start Bootstrap](http://startbootstrap.com/). This theme features a blog homepage, about page, contact page, and an example post page along with a working PHP contact form.
 
-Hexo implementation of [Clean Blog](http://blackrockdigital.github.io/startbootstrap-clean-blog/index.html)
+## Preview
 
-Clean blog is a full featured, responsive Hexo theme. [Demo here](http://www.codeblocq.com/assets/projects/hexo-theme-clean-blog/).
+[![Clean Blog Preview](https://startbootstrap.com/assets/img/templates/clean-blog.jpg)](https://blackrockdigital.github.io/startbootstrap-clean-blog/)
 
-## Features
+**[View Live Preview](https://blackrockdigital.github.io/startbootstrap-clean-blog/)**
 
-- Disqus and Facebook comments
-- Google Analytics
-- Addthis
-- Cover image for posts and pages
-- Tags and Categories Support
-- Responsive Images
-- Image Gallery
-- Code syntax highlighting
+## Status
 
-## External libraries used
+[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/BlackrockDigital/startbootstrap-clean-blog/master/LICENSE)
+[![npm version](https://img.shields.io/npm/v/startbootstrap-clean-blog.svg)](https://www.npmjs.com/package/startbootstrap-clean-blog)
+[![Build Status](https://travis-ci.org/BlackrockDigital/startbootstrap-clean-blog.svg?branch=master)](https://travis-ci.org/BlackrockDigital/startbootstrap-clean-blog)
+[![dependencies Status](https://david-dm.org/BlackrockDigital/startbootstrap-clean-blog/status.svg)](https://david-dm.org/BlackrockDigital/startbootstrap-clean-blog)
+[![devDependencies Status](https://david-dm.org/BlackrockDigital/startbootstrap-clean-blog/dev-status.svg)](https://david-dm.org/BlackrockDigital/startbootstrap-clean-blog?type=dev)
 
-- [Bootstrap](http://getbootstrap.com/css/)
-- [FeatherLight.js](http://noelboss.github.io/featherlight/) (Gallery)
-- [jQuery](https://jquery.com/)
+## Download and Installation
 
-## Installation
+To begin using this template, choose one of the following options to get started:
+* [Download the latest release on Start Bootstrap](https://startbootstrap.com/template-overviews/clean-blog/)
+* Install via npm: `npm i startbootstrap-clean-blog`
+* Clone the repo: `git clone https://github.com/BlackrockDigital/startbootstrap-clean-blog.git`
+* [Fork, Clone, or Download on GitHub](https://github.com/BlackrockDigital/startbootstrap-clean-blog)
 
-```
-$ git clone https://github.com/klugjo/hexo-theme-clean-blog.git themes/clean-blog
-```
+## Usage
 
-Then update your blog's main `_config.yml` to set the theme to `clean-blog`:
+### Basic Usage
 
-```
-# Extensions
-## Plugins: http://hexo.io/plugins/
-## Themes: http://hexo.io/themes/
-theme: clean-blog
-```
+After downloading, simply edit the HTML and CSS files included with the template in your favorite text editor to make changes. These are the only files you need to worry about, you can ignore everything else! To preview the changes you make to the code, you can open the `index.html` file in your web browser.
 
-## Configuration
+### Advanced Usage
 
-### Menu
+After installation, run `npm install` and then run `gulp dev` which will open up a preview of the template in your default browser, watch for changes to core template files, and live reload the browser when changes are saved. You can view the `gulpfile.js` to see which tasks are included with the dev environment.
 
-The menu is configured in the theme's `_config.yml`.
+#### Gulp Tasks
 
-```
-# Header
-menu:
-  Home: /
-  Archives: /archives
-  Github:
-    url: https://github.com/klugjo/hexo-theme-clean-blog
-    icon: github
-```
+- `gulp` the default task that builds everything
+- `gulp dev` browserSync opens the project in your default browser and live reloads when changes are made
+- `gulp sass` compiles SCSS files into CSS
+- `gulp minify-css` minifies the compiled CSS file
+- `gulp minify-js` minifies the themes JS file
+- `gulp copy` copies dependencies from node_modules to the vendor directory
 
-The object key is the label and the value is the path, or you can use a icon (font awesome) like menu item.
+## Bugs and Issues
 
-### Top Left Label
+Have a bug or an issue with this template? [Open a new issue](https://github.com/BlackrockDigital/startbootstrap-clean-blog/issues) here on GitHub or leave a comment on the [template overview page at Start Bootstrap](http://startbootstrap.com/template-overviews/clean-blog/).
 
-The top left label is configured in the theme's `_config.yml`. When clicked it will lead to the Home Page.
+## Custom Builds
 
-```
-# Title on top left of menu. Leave empty to use main blog title
-menu_title: Configurable Title
-```
+You can hire Start Bootstrap to create a custom build of any template, or create something from scratch using Bootstrap. For more information, visit the **[custom design services page](https://startbootstrap.com/bootstrap-design-services/)**.
 
-### Home Page cover image
+## About
 
-The Home Page cover is configured in the theme's `_config.yml`. It will be the same for all index type pages.
+Start Bootstrap is an open source library of free Bootstrap templates and themes. All of the free templates and themes on Start Bootstrap are released under the MIT license, which means you can use them for any purpose, even for commercial projects.
 
-```
-# URL of the Home page image
-index_cover: /img/home-bg.jpg
-```
+* https://startbootstrap.com
+* https://twitter.com/SBootstrap
 
-### Default post title
+Start Bootstrap was created by and is maintained by **[David Miller](http://davidmiller.io/)**, Owner of [Blackrock Digital](http://blackrockdigital.io/).
 
-The default post title (used when no title is specified) is configured in the theme's `_config.yml`.
+* http://davidmiller.io
+* https://twitter.com/davidmillerskt
+* https://github.com/davidtmiller
 
-```
-# Default post title
-default_post_title: Untitled
-```
+Start Bootstrap is based on the [Bootstrap](http://getbootstrap.com/) framework created by [Mark Otto](https://twitter.com/mdo) and [Jacob Thorton](https://twitter.com/fat).
 
-### Comments
+## Copyright and License
 
-The comments provider is specified in the theme's `_config.yml`. If you specify both a `disqus_shortname` and a `facebook.appid` there will be 2 sets of comment per post. So choose one.
-
-```
-# Comments. Choose one by filling up the information
-comments:
-  # Disqus comments
-  disqus_shortname: klugjotest
-  # Facebook comments
-  facebook:
-    appid: 123456789012345
-    comment_count: 5
-    comment_colorscheme: light
-```
-
-You can too hide the comment in the posts front-matter:
-
-```
-comment: false
----
-```
-
-### Google Analytics
-
-The Google Analytics Tracking ID is configured in the theme's `_config.yml`.
-
-```
-# Google Analytics Tracking ID
-google_analytics:
-```
-
-### Addthis
-
-The Addthis ID is configured in the theme's `_config.yml`.
-
-```
-# Addthis ID
-addthis:
-```
-
-### Social Account
-
-Setup the links to your social pages in the theme's `_config.yml`. Links are in the footer.
-
-```
-# Social Accounts
-twitter_url:
-facebook_url:
-github_url: https://github.com/klugjo/hexo-theme-clean-blog
-linkedin_url:
-mailto:
-```
-
-### Author
-
-The post's author is specified in the posts front-matter:
-
-```
-author: Klug Jo
----
-```
-
-### Post's Cover Image
-
-By default, posts will use the home page cover image. You can specify a custom cover in the front-matter:
-
-```
-title: Excerpts
-date: 2013-12-25 00:23:23
-tags: ["Excertps"]
-cover: /assets/contact-bg.jpg
----
-```
-
-### Post's Share Cover Image
-
-You can specify a custom cover to share yours posts in social medias:
-
-```
-share_cover: /assets/contact-bg.jpg
----
-```
-
-### Post's Excerpt
-
-This theme does not support traditional excerpts. To show excerpts on the index page, use `subtitle` in the front-matter:
-
-```
-title: Excerpts
-date: 2013-12-25 00:23:23
-tags: ["Excertps"]
-subtitle: Standard Excerpts are not supported in Clean Blog but you can use subtitles in the front matter to display text in the index.
----
-
-```
-
-## Tags page.
-
-> Follow these steps to add a `tags` page that contains all the tags in your site.
-
-- Create a page named `tags`
-
-```
-$ hexo new page "tags"
-```
-
-- Edit the newly created page and set page type to `tags` in the front matter.
-
-```
-title: All tags
-type: "tags"
-```
-
-- Add `tags` to the menu in the theme `_config.yml`:
-
-```
-# Header
-menu:
-  Home: /
-  Archives: /archives
-  Tags: /tags
-```
-
-## Categories page.
-
-> Follow these steps to add a `categories` page that contains all the categories in your site.
-
-- Create a page named `categories`
-
-```
-$ hexo new page "categories"
-```
-
-- Edit the newly created page and set page type to `categories` in the front matter.
-
-```
-title: All tags
-type: "categories"
-```
-
-- Add `Categories` to the menu in the theme `_config.yml`:
-
-```
-# Header
-menu:
-  Home: /
-  Archives: /archives
-  Categories: /categories
-```
-
-
-## Creator
-
-This theme was created by [Blackrock Digital](https://github.com/BlackrockDigital) and adapted for Hexo by [Jonathan Klughertz](http://www.codeblocq.com/).
-
-## License
-
-MIT
+Copyright 2013-2017 Blackrock Digital LLC. Code released under the [MIT](https://github.com/BlackrockDigital/startbootstrap-clean-blog/blob/gh-pages/LICENSE) license.
